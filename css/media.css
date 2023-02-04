@@ -23,6 +23,24 @@
 }
 
 @media screen and (max-width:750px){
+    .header nav{
+        height: 8vh;
+    }
+
+    .head {
+        height: 8vh;
+    }
+
+    .txti button{
+        padding: 8px;
+        width: 50%;
+    }
+
+    .txti button a{
+        font-size: 1.6rem;
+    }
+
+
     #first li:nth-last-child(2){
         display: none;
     }
@@ -41,9 +59,9 @@
         list-style: none;
         position: fixed;
         width: 100%;
-        top: 90px;
+        top: 8vh;
         padding: 20px 0;
-        height: calc(100% - 90px);
+        height: calc(100% - 8vh);
         overflow-y: auto;
 
         left: 100%;
@@ -51,20 +69,7 @@
     }
 
     .movil-active{
-        flex-direction: column;
-        text-align: center;
-        margin-right: 20px;
-        background-color: rgb(27, 25, 25);
-        list-style: none;
-        position: fixed;
-        width: 100%;
-        top: 90px;
-        padding: 20px 0;
-        height: calc(100% - 90px);
-        overflow-y: auto;
-
         left: 0%;
-        transition: 0.3s;
     }
 
     .movil:active{
@@ -74,6 +79,10 @@
 }
 
 @media screen and (max-width:470px){
+
+    .combos{
+        height: 40vh;
+    }
     
     .burgers{
         font-size: 1.8rem;
@@ -93,8 +102,7 @@
     }
 
     #logo {
-        margin-top: 10px;
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .burgers li a{

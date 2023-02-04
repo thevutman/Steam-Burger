@@ -24,8 +24,11 @@ body{
 .header nav{
     position: fixed;
     width: 100%;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    z-index: 2;
     transition: transform 0.4s;
 }
 
@@ -40,7 +43,7 @@ body{
 
 #logo{
     font-family: 'Dancing Script', cursive;
-    font-size: 50px;
+    font-size: 4rem;
     font-weight: bold;
     padding: 10px;
     text-decoration: none;
@@ -51,7 +54,6 @@ body{
 #first li{
     display: inline-block;
     margin-right: 20px;
-    margin-top: 20px;
 }
 
 #logo:active{
@@ -115,7 +117,7 @@ body{
 /*////////////////////////////////////////*/
 
 .head {
-    padding-top: 95px;
+    padding-top: 10vh;
     color: black;
 }
 
@@ -123,10 +125,12 @@ body{
     background-image: url(https://i.pinimg.com/564x/02/3e/8c/023e8c0d3496805f126a478c699f1325.jpg);
     background-size: cover;
     text-align: center;
-    height: 40vh;
+    height: 60vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .combos-dos{
@@ -175,14 +179,14 @@ body{
 .txti button{
     background-color: rgb(177, 7, 7);
     border-color: rgb(177, 7, 7);
-    padding: 1.5vw;
-    border-radius: 10px;
+    padding: 8px 12px;
+    border-radius: 8px;
 }
 
 .txti button a{
     color: white;
     text-decoration: none;
-    font-size: 2vw;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -193,8 +197,10 @@ body{
 
 .pause {
     display: flex;
-    font-size: 2vw;
-    
+    font-size: 1.4rem;
+    position: absolute;
+    bottom: 8px;
+    left: 12px;
 }
 
 .iconss{
@@ -220,6 +226,12 @@ body{
 .container{
     background-color: rgb(27, 25, 25);
     padding-bottom: 30px;
+}
+
+div#Hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .burgers{
@@ -274,10 +286,11 @@ body{
     border-color: rgb(104, 2, 2);
 }
 
-.imgh{
-    max-width: 10%;
-    border-radius: 5px;  
-    margin-left: 20px;
+.imgh.imgh {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 /*////////*footer//////////*/
@@ -293,7 +306,7 @@ body{
     padding-top: 130px;
     text-align: center;
     vertical-align: middle;
-    font-size: 40px;
+    font-size: 4rem;
     font-weight: bold;
     color: black;
 }
@@ -310,7 +323,8 @@ body{
     border-color: beige;
     background-color: beige;
     border-radius: 8px;
-    padding: 7px;
+    font-size: 3rem;
+    padding: 8px 24px;
 }
 
 .menue a:hover{
@@ -345,9 +359,18 @@ body{
     display: inline-block;
     margin: 20px;
     font-size: 20px;
-    padding: 10px;
+    width: 40px;
+    height: 40px;
     border-radius: 30px;
     background-color: rgb(136, 13, 13);
+}
+
+#foot ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
 }
 
 #foot ul li:nth-child(2):hover{
